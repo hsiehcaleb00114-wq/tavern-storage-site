@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>酒館倉庫 Tavern Storage｜支援 Support</title>
+<meta name="description" content="酒館倉庫：像素風冰箱食材管理 App 的支援頁。Tavern Storage support page.">
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg:#221D2C; --panel:#2B2438; --line:#3E334C; --text:#F0E3D0; --dim:#A08B94; --gold:#FBCA97; }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); margin: 0; padding: 24px 16px 48px;
+         font-family: system-ui, -apple-system, "Noto Sans TC", "Hiragino Sans", "Apple SD Gothic Neo", sans-serif; line-height: 1.75; }
+  main { max-width: 720px; margin: 0 auto; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  header img { width: 64px; height: 64px; image-rendering: pixelated; border-radius: 14px; }
+  h1 { color: var(--gold); font-size: 1.5em; margin: 0; }
+  h2 { color: var(--gold); font-size: 1.1em; margin-top: 1.8em; }
+  .dim { color: var(--dim); }
+  a { color: var(--gold); }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 8px; }
+  nav a { border: 1px solid var(--line); padding: 4px 12px; border-radius: 6px; text-decoration: none; background: var(--panel); }
+  nav a.on { border-color: var(--gold); }
+  .banner { width: 100%; image-rendering: pixelated; border-radius: 8px; border: 2px solid var(--line); margin: 12px 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 16px; margin: 12px 0; }
+  section { display: none; }
+  section.on { display: block; }
+  dt { font-weight: 600; margin-top: 12px; }
+  dd { margin: 4px 0 0; color: var(--dim); }
+  footer { margin-top: 40px; font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="icon.png" alt="">
+  <div>
+    <h1>酒館倉庫 Tavern Storage</h1>
+    <div class="dim">像素風冰箱食材管理・Pixel fridge tracker</div>
+  </div>
+</header>
+
+<nav>
+  <a href="#zh" data-l="zh">繁體中文</a>
+  <a href="#en" data-l="en">English</a>
+  <a href="#ja" data-l="ja">日本語</a>
+  <a href="#ko" data-l="ko">한국어</a>
+</nav>
+
+<!-- 繁體中文 -->
+<section id="zh" lang="zh-Hant">
+  <img class="banner" src="banner_zh.png" alt="酒館倉庫">
+  <p>把買回來的食材放進倉庫，倉管小豬會記住每一樣的保存期限，快過期時提醒你先吃掉它。不用帳號、資料只存在你的手機、一次買斷沒有訂閱。</p>
+  <h2>聯絡我們</h2>
+  <div class="card">遇到問題或有建議，請到 <a href="https://github.com/hsiehcaleb00114-wq/tavern-storage-site/issues/new">這裡回報</a>（需要 GitHub 帳號）。我們會盡快回覆。</div>
+  <h2>常見問題</h2>
+  <dl>
+    <dt>換手機時資料怎麼搬？</dt>
+    <dd>舊手機：設定 → 備份與換手機 → 複製備份碼，傳給自己。新手機：貼上備份碼 → 還原。</dd>
+    <dt>升級之後換手機，還要再買一次嗎？</dt>
+    <dd>不用。在新手機打開 設定 → 倉庫升級 → 恢復購買（要用同一個 Apple ID／Google 帳號）。</dd>
+    <dt>沒有收到到期提醒？</dt>
+    <dd>請確認系統設定裡允許「酒館倉庫」傳送通知，並在 App 的設定頁打開到期提醒。只有當天或隔天有東西到期時才會通知。</dd>
+    <dt>保存天數準確嗎？</dt>
+    <dd>App 帶入的是一般建議值，實際請以食材狀態和包裝上的期限為準，也可以在新增時自己調整。</dd>
+    <dt>你們會收集我的資料嗎？</dt>
+    <dd>不會。所有資料只存在你的裝置上，請見 <a href="privacy.html">隱私權政策</a>。</dd>
+  </dl>
+</section>
+
+<!-- English -->
+<section id="en" lang="en">
+  <img class="banner" src="banner_en.png" alt="Tavern Storage">
+  <p>Put your groceries in, and Piggy the keeper remembers when each item expires and reminds you to eat it first. No account, your data stays on your phone, buy once with no subscription.</p>
+  <h2>Contact</h2>
+  <div class="card">Found a problem or have an idea? Please <a href="https://github.com/hsiehcaleb00114-wq/tavern-storage-site/issues/new">report it here</a> (GitHub account required). We'll get back to you as soon as we can.</div>
+  <h2>FAQ</h2>
+  <dl>
+    <dt>How do I move my data to a new phone?</dt>
+    <dd>Old phone: Settings → Backup &amp; new phone → Copy backup code, and send it to yourself. New phone: paste the code → Restore.</dd>
+    <dt>Do I need to buy the full version again on a new phone?</dt>
+    <dd>No. On the new phone open Settings → Upgrade → Restore purchase (use the same Apple ID / Google account).</dd>
+    <dt>I'm not getting expiry reminders.</dt>
+    <dd>Make sure notifications for Tavern Storage are allowed in your system settings and reminders are on in the app's settings. You only get one on days when something expires today or tomorrow.</dd>
+    <dt>Are the storage days accurate?</dt>
+    <dd>They are general guidelines. Always check the food itself and the date on the label; you can also adjust the days when adding an item.</dd>
+    <dt>Do you collect my data?</dt>
+    <dd>No. Everything stays on your device. See the <a href="privacy.html">privacy policy</a>.</dd>
+  </dl>
+</section>
+
+<!-- 日本語 -->
+<section id="ja" lang="ja">
+  <img class="banner" src="banner_en.png" alt="酒場の倉庫">
+  <p>買ってきた食材を入れると、倉庫番のブタが期限を覚えて、期限が来る前にお知らせします。アカウント不要、データは端末の中だけ、サブスクなしの買い切りです。</p>
+  <h2>お問い合わせ</h2>
+  <div class="card">不具合やご要望は <a href="https://github.com/hsiehcaleb00114-wq/tavern-storage-site/issues/new">こちらからご報告</a>ください（GitHub アカウントが必要です）。</div>
+  <h2>よくある質問</h2>
+  <dl>
+    <dt>機種変更のとき、データはどう移しますか？</dt>
+    <dd>古い端末：設定 → バックアップと機種変更 → バックアップをコピーして自分に送る。新しい端末：貼り付けて復元。</dd>
+    <dt>機種変更したら、製品版をもう一度買う必要がありますか？</dt>
+    <dd>いいえ。新しい端末で 設定 → アップグレード → 購入を復元（同じ Apple ID／Google アカウントで）。</dd>
+    <dt>期限のお知らせが届きません。</dt>
+    <dd>端末の設定で通知が許可されているか、アプリの設定でリマインダーがオンになっているか確認してください。今日・明日が期限のものがある日だけお知らせします。</dd>
+    <dt>保存日数は正確ですか？</dt>
+    <dd>一般的な目安です。実際の状態とパッケージの表示を確認してください。追加するときに日数を変えることもできます。</dd>
+    <dt>データを収集していますか？</dt>
+    <dd>いいえ。すべて端末の中だけに保存されます。<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</dd>
+  </dl>
+</section>
+
+<!-- 한국어 -->
+<section id="ko" lang="ko">
+  <img class="banner" src="banner_en.png" alt="주점 창고">
+  <p>사 온 식재료를 넣으면 창고지기 돼지가 기한을 기억했다가, 지나기 전에 먼저 먹으라고 알려 줘요. 계정 없음, 데이터는 폰에만, 구독 없는 한 번 구매.</p>
+  <h2>문의</h2>
+  <div class="card">문제나 건의 사항은 <a href="https://github.com/hsiehcaleb00114-wq/tavern-storage-site/issues/new">여기에서 알려 주세요</a> (GitHub 계정 필요).</div>
+  <h2>자주 묻는 질문</h2>
+  <dl>
+    <dt>기기를 바꿀 때 데이터는 어떻게 옮기나요?</dt>
+    <dd>기존 기기: 설정 → 백업과 기기 변경 → 백업 코드 복사 후 나에게 보내기. 새 기기: 붙여 넣고 복원.</dd>
+    <dt>기기를 바꾸면 정식판을 다시 사야 하나요?</dt>
+    <dd>아니요. 새 기기에서 설정 → 업그레이드 → 구매 복원 (같은 Apple ID／Google 계정).</dd>
+    <dt>유통기한 알림이 오지 않아요.</dt>
+    <dd>기기 설정에서 알림이 허용되어 있는지, 앱 설정에서 알림이 켜져 있는지 확인해 주세요. 오늘・내일 기한인 게 있는 날에만 알려요.</dd>
+    <dt>보관 일수는 정확한가요?</dt>
+    <dd>일반적인 기준이에요. 실제 상태와 포장의 표시를 확인하세요. 추가할 때 일수를 바꿀 수도 있어요.</dd>
+    <dt>데이터를 수집하나요?</dt>
+    <dd>아니요. 모든 데이터는 기기에만 저장돼요. <a href="privacy.html">개인정보 처리방침</a>을 확인하세요.</dd>
+  </dl>
+</section>
+
+<footer class="dim">
+  <a href="privacy.html">隱私權政策 Privacy Policy</a> ・ © 2026 Tavern Storage
+</footer>
+</main>
+<script>
+  // 依網址 #語言 或瀏覽器語言顯示對應段落
+  function pick() {
+    var h = location.hash.slice(1);
+    if (!/^(zh|en|ja|ko)$/.test(h)) {
+      var n = (navigator.language || 'en').slice(0, 2);
+      h = n === 'zh' ? 'zh' : n === 'ja' ? 'ja' : n === 'ko' ? 'ko' : 'en';
+    }
+    document.querySelectorAll('section').forEach(function (s) { s.classList.toggle('on', s.id === h); });
+    document.querySelectorAll('nav a').forEach(function (a) { a.classList.toggle('on', a.dataset.l === h); });
+    document.documentElement.lang = h === 'zh' ? 'zh-Hant' : h;
+  }
+  window.addEventListener('hashchange', pick);
+  pick();
+</script>
+</body>
+</html>
